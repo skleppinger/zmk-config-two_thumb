@@ -24,6 +24,7 @@
             tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <5 6 7 8 9 10>;    // <---[[right-hand keys]]
         };
 
@@ -76,7 +77,7 @@
   &kp Q         &kp W        &kp L       &kp M       &kp G            &kp J      &kp L       &kp U       &kp Y        &kp DELETE
   &kp A         &hm LCTRL R  &hm LALT S  &hm LGUI T  &kp D            &kp H      &hm RGUI N  &hm RALT E  &hm RCTRL I  &kp O
   &hm LSHIFT Z  &kp X        &kp C       &kp V       &kp TAB          &kp B      &kp K       &kp M       &trans       &kp RIGHT_SHIFT
-                             &to 2       &sl 1       &kp BACKSPACE    &kp SPACE  &to 3       &to 4
+                             &to 2       &sl 1       &kp BACKSPACE    &kp SPACE  &to 3       &trans
             >;
         };
 
@@ -98,14 +99,14 @@
             >;
         };
 
-//        navigation {
-//            bindings = <
-//  &trans      &msc SCROLL_LEFT  &mmv MOVE_UP    &msc SCROLL_RIGHT  &trans    &trans    &mkp LCLK       &kp UP_ARROW  &mkp RCLK  &trans
-//  &kp TAB     &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans    &trans    &kp LEFT        &kp DOWN      &kp RIGHT  &kp LG(RBKT)
-//  &kp LSHIFT  &mkp RCLK         &msc SCROLL_UP  &msc SCROLL_DOWN   &to 0     &kp RGUI  &kp HOME        &kp PAGE_UP   &trans     &kp RSHIFT
-//                                &trans          &to 0              &trans    &trans    &kp RGUI        &to 4
-//            >;
-//        };
+        //        navigation {
+        //            bindings = <
+        //  &trans      &msc SCROLL_LEFT  &mmv MOVE_UP    &msc SCROLL_RIGHT  &trans    &trans    &mkp LCLK       &kp UP_ARROW  &mkp RCLK  &trans
+        //  &kp TAB     &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans    &trans    &kp LEFT        &kp DOWN      &kp RIGHT  &kp LG(RBKT)
+        //  &kp LSHIFT  &mkp RCLK         &msc SCROLL_UP  &msc SCROLL_DOWN   &to 0     &kp RGUI  &kp HOME        &kp PAGE_UP   &trans     &kp RSHIFT
+        //                                &trans          &to 0              &trans    &trans    &kp RGUI        &to 4
+        //            >;
+        //        };
 
         media_controls {
             bindings = <
