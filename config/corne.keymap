@@ -108,7 +108,7 @@
 
         media_controls {
             bindings = <
-&trans  &kp C_PREVIOUS        &kp C_PREV            &kp C_PLAY_PAUSE      &kp C_NEXT            &trans           &trans     &kp NUMBER_1    &kp N8               &kp NUMBER_3  &trans  &trans
+&trans  &kp C_PREVIOUS        &kp C_PREV            &kp C_PLAY_PAUSE      &kp C_NEXT            &trans           &trans     &kp NUMBER_1    &kp NUMBER_2         &kp NUMBER_3  &trans  &trans
 &trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &hm_tp LALT C_VOL_DN  &hm_tp LGUI C_VOL_UP  &kp K_MUTE       &trans     &hm_tp RGUI N4  &hm_tp RIGHT_ALT N5  &kp N6        &kp N0  &trans
 &trans  &trans                &trans                &trans                &trans                &trans           &trans     &kp N7          &kp N8               &kp N9        &trans  &trans
                                                     &to 2                 &to 0                 &kp BACKSPACE    &kp SPACE  &to 3           &trans
