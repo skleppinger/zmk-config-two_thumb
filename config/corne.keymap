@@ -91,7 +91,7 @@
 &trans  &kp Q            &kp W           &kp F          &kp P          &kp G            &kp J            &kp L          &kp U          &kp Y           &kp DELETE       &trans
 &trans  &kp A            &hm_tp LCTRL R  &hm_tp LALT S  &hm_tp LGUI T  &kp D            &kp H            &hm_tp RGUI N  &hm_tp RALT E  &hm_tp RCTRL I  &kp O            &trans
 &trans  &hm_tp LSHIFT Z  &kp X           &kp C          &kp V          &kp B            &kp K            &kp M          &kp TAB        &trans          &kp RIGHT_SHIFT  &trans
-                                         &to 2          &sl 1          &kp BACKSPACE    &hs ENTER SPACE  &to 3          &trans
+                                         &to 2          &sl 1          &kp BACKSPACE    &hs ENTER SPACE  &to 4          &to 3
             >;
         };
 
@@ -115,16 +115,16 @@
 
         navigation {
             bindings = <
-&trans  &trans      &trans          &trans          &trans           &trans       &trans     &mkp LCLK  &kp UP_ARROW  &mkp RCLK  &trans        &trans
-&trans  &kp TAB     &trans          &trans          &trans           &trans       &trans     &kp LEFT   &kp DOWN      &kp RIGHT  &kp LG(RBKT)  &trans
-&trans  &kp LSHIFT  &mkp RCLK       &trans          &trans           &to 0        &kp RGUI   &kp HOME   &kp PAGE_UP   &trans     &kp RSHIFT    &trans
-                                    &trans          &to 0            &mkp RCLK    &mkp LCLK  &mkp MCLK  &to 4
+&trans  &trans      &trans     &trans  &trans  &trans       &trans     &mkp LCLK  &kp UP_ARROW  &mkp RCLK      &trans        &trans
+&trans  &kp TAB     &trans     &trans  &trans  &trans       &trans     &kp LEFT   &kp DOWN      &kp RIGHT      &kp LG(RBKT)  &trans
+&trans  &kp LSHIFT  &mkp RCLK  &trans  &trans  &to 0        &kp RGUI   &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN  &kp RSHIFT    &trans
+                               &trans  &to 0   &mkp RCLK    &mkp LCLK  &mkp MCLK  &to 4
             >;
         };
 
         media_controls {
             bindings = <
-&trans  &kp C_PREVIOUS        &kp C_PREV            &kp C_PLAY_PAUSE      &kp C_NEXT            &trans           &trans     &kp NUMBER_1    &kp NUMBER_2         &kp NUMBER_3  &trans  &trans
+&trans  &trans                &kp C_PREV            &kp C_PLAY_PAUSE      &kp C_NEXT            &trans           &trans     &kp NUMBER_1    &kp NUMBER_2         &kp NUMBER_3  &trans  &trans
 &trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &hm_tp LALT C_VOL_DN  &hm_tp LGUI C_VOL_UP  &kp K_MUTE       &trans     &hm_tp RGUI N4  &hm_tp RIGHT_ALT N5  &kp N6        &kp N0  &trans
 &trans  &trans                &trans                &trans                &trans                &trans           &trans     &kp N7          &kp N8               &kp N9        &trans  &trans
                                                     &to 2                 &to 0                 &kp BACKSPACE    &kp SPACE  &to 3           &trans
