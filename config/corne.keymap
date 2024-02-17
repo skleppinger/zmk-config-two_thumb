@@ -8,6 +8,21 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define U_MOUSE_SCROLL_MAX 100                    /* <--- New max speed setting (default: 10) */
+
+#undef SCROLL_UP
+#undef SCROLL_DOWN
+#undef SCROLL_LEFT
+#undef SCROLL_RIGHT
+#define SCROLL_UP SCROLL_Y(U_MOUSE_SCROLL_MAX)
+#define SCROLL_DOWN SCROLL_Y(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_LEFT SCROLL_X(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_RIGHT SCROLL_X(U_MOUSE_SCROLL_MAX)
+
+&mwh {
+  time-to-max-speed-ms = <500>;                 /* <--- How long time until max speed is reached */
+};
+
 &mt {
     flavor = "tap-preferred";
     tapping_term_ms = <200>;
@@ -99,9 +114,9 @@
 
         navigation {
             bindings = <
-    &trans  &trans      &msc SCROLL_X  &mmv MOVE_UP    &msc SCROLL_X  &trans    &trans    &mkp LCLK       &kp UP_ARROW  &mkp RCLK  &trans        &trans 
+    &trans  &trans      &msc SCROLL_LEFT  &mmv MOVE_UP    &msc SCROLL_RIGHT  &trans    &trans    &mkp LCLK       &kp UP_ARROW  &mkp RCLK  &trans        &trans 
     &trans  &kp TAB     &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans    &trans    &kp LEFT        &kp DOWN      &kp RIGHT  &kp LG(RBKT)  &trans 
-    &trans  &kp LSHIFT  &mkp RCLK         &msc SCROLL_Y  &msc SCROLL_Y   &to 0     &kp RGUI  &kp HOME        &kp PAGE_UP   &trans     &kp RSHIFT    &trans 
+    &trans  &kp LSHIFT  &mkp RCLK         &msc SCROLL_DOWN  &msc SCROLL_UP   &to 0     &kp RGUI  &kp HOME        &kp PAGE_UP   &trans     &kp RSHIFT    &trans 
                                 &trans          &to 0              &trans    &trans    &kp RGUI        &to 4
             >;
         };
