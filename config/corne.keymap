@@ -14,6 +14,7 @@
 #undef SCROLL_DOWN
 #undef SCROLL_LEFT
 #undef SCROLL_RIGHT
+
 #define SCROLL_UP SCROLL_Y(U_MOUSE_SCROLL_MAX)
 #define SCROLL_DOWN SCROLL_Y(-U_MOUSE_SCROLL_MAX)
 #define SCROLL_LEFT SCROLL_X(-U_MOUSE_SCROLL_MAX)
@@ -114,10 +115,10 @@
 
         navigation {
             bindings = <
-&trans  &trans      &trans              &mmv MOVE_UP        &trans              &trans    &trans    &mkp LCLK       &kp UP_ARROW  &mkp RCLK  &trans        &trans 
-&trans  &kp TAB     &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &trans    &trans    &kp LEFT        &kp DOWN      &kp RIGHT  &kp LG(RBKT)  &trans 
-&trans  &kp LSHIFT  &mkp RCLK           &trans              &trans              &to 0     &kp RGUI  &kp HOME        &kp PAGE_UP   &trans     &kp RSHIFT    &trans 
-                    &trans              &to 0               &trans              &trans    &kp RGUI  &to 4
+&trans  &trans      &trans          &mmv MOVE_UP    &trans           &trans       &trans     &mkp LCLK  &kp UP_ARROW  &mkp RCLK  &trans        &trans
+&trans  &kp TAB     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &trans     &kp LEFT   &kp DOWN      &kp RIGHT  &kp LG(RBKT)  &trans
+&trans  &kp LSHIFT  &mkp RCLK       &trans          &trans           &to 0        &kp RGUI   &kp HOME   &kp PAGE_UP   &trans     &kp RSHIFT    &trans
+                                    &trans          &to 0            &mkp RCLK    &mkp LCLK  &mkp MCLK  &to 4
             >;
         };
 
