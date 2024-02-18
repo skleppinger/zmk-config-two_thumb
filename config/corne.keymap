@@ -89,18 +89,18 @@
         default_layer {
             bindings = <
 &trans  &hm_tp ESCAPE Q  &kp W           &kp F          &kp P          &kp G            &kp J            &kp L          &kp U          &kp Y           &kp DELETE       &trans
-&trans  &hm_tp ESCAPE A  &hm_tp LCTRL R  &hm_tp LALT S  &hm_tp LGUI T  &kp D            &kp H            &hm_tp RGUI N  &hm_tp RALT E  &hm_tp RCTRL I  &kp O            &trans
-&trans  &hm_tp LSHIFT Z  &kp X           &kp C          &kp V          &kp B            &kp K            &kp M          &kp TAB        &trans          &kp RIGHT_SHIFT  &trans
+&trans  &kp A            &hm_tp LCTRL R  &hm_tp LALT S  &hm_tp LGUI T  &kp D            &kp H            &hm_tp RGUI N  &hm_tp RALT E  &hm_tp RCTRL I  &kp O            &trans
+&trans  &hm_tp LSHIFT Z  &kp X           &kp C          &kp V          &kp B            &kp K            &kp M          &trans         &trans          &kp RIGHT_SHIFT  &trans
                                          &to 2          &sl 1          &kp BACKSPACE    &hs ENTER SPACE  &to 4          &to 3
             >;
         };
 
         symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans            &kp SEMICOLON     &kp SLASH          &kp BACKSLASH      &kp MINUS   &kp EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COMMA          &kp PERIOD  &kp UNDER  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &kp GRAVE         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &trans      &trans     &trans
-                        &trans  &trans  &trans            &kp SPACE         &trans             &trans
+&trans  &trans  &trans  &trans  &trans   &trans            &kp SEMICOLON     &kp SLASH          &kp BACKSLASH      &kp MINUS   &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &kp TAB  &kp LEFT_SHIFT    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COMMA          &kp PERIOD  &kp UNDER  &trans
+&trans  &trans  &trans  &trans  &trans   &trans            &kp GRAVE         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &trans      &trans     &trans
+                        &trans  &trans   &trans            &kp SPACE         &trans             &trans
             >;
         };
 
@@ -109,7 +109,7 @@
 &trans  &kp F1               &kp F2       &kp F3      &kp F4         &kp F5           &kp F6         &kp F7            &kp F8            &kp F9                &kp F10                &trans
 &trans  &kp EXCLAMATION      &kp AT_SIGN  &kp HASH    &kp DOLLAR     &kp PERCENT      &kp CARET      &kp AMPERSAND     &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &hm_tp LSHIFT GRAVE  &kp COMMA    &kp PERIOD  &kp BACKSLASH  &kp SLASH        &kp SEMICOLON  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RBKT              &kp RSHIFT             &trans
-                                          &mo 0       &to 0          &kp BACKSPACE    &kp SPACE      &to 3             &to 4
+                                          &mo 0       &to 0          &kp BACKSPACE    &kp SPACE      &to 4             &to 3
             >;
         };
 
@@ -127,7 +127,7 @@
 &trans  &trans                &kp C_PREV            &kp C_PLAY_PAUSE      &kp C_NEXT            &trans           &trans     &kp NUMBER_1    &kp NUMBER_2         &kp NUMBER_3  &trans  &trans
 &trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &hm_tp LALT C_VOL_DN  &hm_tp LGUI C_VOL_UP  &kp K_MUTE       &trans     &hm_tp RGUI N4  &hm_tp RIGHT_ALT N5  &kp N6        &kp N0  &trans
 &trans  &trans                &trans                &trans                &trans                &trans           &trans     &kp N7          &kp N8               &kp N9        &trans  &trans
-                                                    &to 2                 &to 0                 &kp BACKSPACE    &kp SPACE  &to 3           &trans
+                                                    &to 2                 &to 0                 &kp BACKSPACE    &kp SPACE  &to 0           &to 3
             >;
         };
     };
