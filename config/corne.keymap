@@ -91,23 +91,23 @@
             bindings = <
 &trans  &hm_tp ESCAPE Q  &kp W           &kp E          &kp R          &kp T            &kp Y            &kp U          &kp I          &kp O           &kp P            &trans
 &trans  &kp A            &hm_tp LCTRL S  &hm_tp LALT D  &hm_tp LGUI F  &kp G            &kp H            &hm_tp RGUI J  &hm_tp RALT K  &hm_tp RCTRL L  &kp SEMICOLON    &trans
-&trans  &hm_tp LSHIFT Z  &kp X           &kp C          &kp V          &kp B            &kp N            &kp M          &trans         &trans          &kp RIGHT_SHIFT  &trans
+&trans  &hm_tp LSHIFT Z  &kp X           &kp C          &kp V          &kp B            &kp N            &kp M          &trans         &kp TAB         &kp RIGHT_SHIFT  &trans
                                          &to 2          &sl 1          &kp BACKSPACE    &hs ENTER SPACE  &to 4          &to 3
             >;
         };
 
         symbols {
             bindings = <
-&trans  &trans  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp K_APPLICATION  &trans            &kp SEMICOLON     &kp SLASH          &kp BACKSLASH      &kp MINUS   &kp EQUAL  &trans
-&trans  &trans  &kp LCTRL                          &kp LEFT_ALT                            &kp LEFT_COMMAND   &kp LEFT_SHIFT    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COMMA          &kp PERIOD  &kp UNDER  &trans
-&trans  &trans  &trans                             &trans                                  &trans             &kp TAB           &kp GRAVE         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &trans      &trans     &trans
+&trans  &trans  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp K_APPLICATION  &trans            &kp SEMICOLON     &kp SLASH          &kp BACKSLASH      &kp MINUS     &kp EQUAL  &trans
+&trans  &trans  &kp LCTRL                          &kp LEFT_ALT                            &kp LEFT_COMMAND   &kp LEFT_SHIFT    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COMMA          &kp PERIOD    &kp UNDER  &trans
+&trans  &trans  &trans                             &trans                                  &trans             &kp TAB           &kp GRAVE         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp QUESTION  &kp EXCL   &trans
                                                    &trans                                  &trans             &trans            &kp SPACE         &trans             &trans
             >;
         };
 
         left_layer {
             bindings = <
-&trans  &kp F1               &kp F2       &kp F3      &kp F4         &kp F5           &kp F6           &kp F7            &kp F8            &kp F9                &kp F10                &trans
+&trans  &kp F1               &kp F2       &kp F3      &kp F4         &kp F5           &kp F7           &kp F8            &kp F9            &kp F10               &kp F11                &trans
 &trans  &kp EXCLAMATION      &kp AT_SIGN  &kp HASH    &kp DOLLAR     &kp PERCENT      &kp CARET        &kp AMPERSAND     &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &hm_tp LSHIFT GRAVE  &kp COMMA    &kp PERIOD  &kp BACKSLASH  &kp SLASH        &kp SEMICOLON    &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RBKT              &kp RSHIFT             &trans
                                           &mo 0       &to 0          &kp BACKSPACE    &hs ENTER SPACE  &to 4             &to 3
@@ -116,10 +116,10 @@
 
         navigation {
             bindings = <
-&trans  &trans      &trans     &trans  &trans  &trans       &trans     &mkp LCLK  &kp UP_ARROW  &mkp RCLK      &trans        &trans
-&trans  &kp TAB     &trans     &trans  &trans  &trans       &trans     &kp LEFT   &kp DOWN      &kp RIGHT      &kp LG(RBKT)  &trans
-&trans  &kp LSHIFT  &mkp RCLK  &trans  &trans  &to 0        &kp RGUI   &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN  &kp RSHIFT    &trans
-                               &trans  &to 0   &mkp RCLK    &mkp LCLK  &mkp MCLK  &to 4
+&trans  &trans      &trans            &trans        &trans            &trans       &trans     &mkp LCLK  &kp UP_ARROW  &mkp RCLK      &trans        &trans
+&trans  &kp TAB     &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans       &trans     &kp LEFT   &kp DOWN      &kp RIGHT      &kp LG(RBKT)  &trans
+&trans  &kp LSHIFT  &mkp RCLK         &trans        &trans            &to 0        &kp RGUI   &kp HOME   &kp PAGE_UP   &kp PAGE_DOWN  &kp RSHIFT    &trans
+                                      &trans        &to 0             &mkp RCLK    &mkp LCLK  &mkp MCLK  &to 4
             >;
         };
 
