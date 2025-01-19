@@ -99,7 +99,7 @@
 
         symbols {
             bindings = <
-&trans  &trans  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp K_APPLICATION  &trans            &kp O             &kp SLASH          &kp BACKSLASH      &kp MINUS     &kp EQUAL  &trans
+&trans  &trans  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp K_APPLICATION  &trans            &kp P             &kp SLASH          &kp BACKSLASH      &kp MINUS     &kp EQUAL  &trans
 &trans  &trans  &kp LCTRL                          &kp LEFT_ALT                            &kp LEFT_COMMAND   &kp LEFT_SHIFT    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COMMA          &kp PERIOD    &kp UNDER  &trans
 &trans  &trans  &trans                             &trans                                  &trans             &kp TAB           &kp GRAVE         &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp QUESTION  &kp EXCL   &trans
                                                    &trans                                  &trans             &trans            &kp SPACE         &trans             &trans
